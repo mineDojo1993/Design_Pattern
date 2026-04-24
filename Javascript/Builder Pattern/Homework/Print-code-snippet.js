@@ -25,7 +25,7 @@ class CodeBuilder {
     }
     toString(){
         let cbString = `class ${this.className} { \n`;
-          cbString += `constructor(${this.fields.join(',')}) { \n`;
+          cbString += `constructor(${this.fields.join(', ')}) { \n`;
           this.fields.forEach(field => {
               cbString += `  this.${field} = ${field}; \n`;
           })
